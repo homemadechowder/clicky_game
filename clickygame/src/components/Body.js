@@ -1,108 +1,24 @@
 import React , {Component} from 'react';
 import Radium from 'radium';
+import Character from './Character';
 import cards from '../cards';
 
-
-const cardStyle = {
-    base:{
-        boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
-        border: '10px white solid',
-        transition: 'transform .2s',
-        height: '200px',
-        width: '200px',
-        ':hover':{
-            transform: 'scale(1.2)'
-        }
-    }
-}
-
-const imgStyle = {
-    base: {
-        objectFit: 'cover'
-    }
-}
 
 class Body extends Component{
        
     state = {
-        cards: [
-            {
-                url: '../characters/babyyoda.jpg',
-                isClicked: 0
-            },
-            {
-                url: '../characters/cad.png',
-                isClicked: 0
-            },
-            {
-                url: '../characters/cena.jpg',
-                isClicked: 0
-            },
-            {
-                url: '../characters/darthvader.jpeg',
-                isClicked: 0
-            },
-            {
-                url: '../characters/grievous.jpg',
-                isClicked: 0
-            },
-            {
-                url: '../characters/jyn.jpg',
-                isClicked: 0
-            },
-            {
-                url: '../characters/kirk.jpg',
-                isClicked: 0
-            },
-            {
-                url: '../characters/kylo.png',
-                isClicked: 0
-            },
-            {
-                url: '../characters/luke.jpg',
-                isClicked: 0
-            },
-            {
-                url: '../characters/mas.jpg',
-                isClicked: 0
-            },
-            {
-                url: '../characters/maul.png',
-                isClicked: 0
-            },
-            {
-                url: '../characters/obi.jpg',
-                isClicked: 0
-            },
-            {
-                url: '../characters/palpatine.jpg',
-                isClicked: 0
-            },
-            {
-                url: '../characters/rey.png',
-                isClicked: 0
-            },
-            {
-                url: '../characters/snowtrooper.jpg',
-                isClicked: 0
-            },
-            {
-                url: '../characters/solo.jpg',
-                isClicked: 0
-            }   
-        ]  
+        char: cards
     }
     
-    componentDidMount(){
+    
 
-        console.log(this.state.cards);
+    setCards = cards =>{
+        console.log("setting state with : "+ cards)
+        this.setState({char: cards})
+    
     }
 
-    // setCards(cards){
-    //     this.setState({cards: cards})
-    // }
-
-    
+        
     
     // shuffle(cards){
     //     var currentIndex = cards.length, temporaryValue, randomIndex;
@@ -127,19 +43,16 @@ class Body extends Component{
     onClick = event =>{
         
         event.preventDefault();
-        this.attr('clicked')
+        console.log(this.state.char);
     }
     
     render(){
         return(
             <div className = 'container'>
-                <div className = 'row'>
-                    
-                    <div className = 'col-3'>
-                        {this.state.cards.map((image,i) =>(
-                        <div style = {cardStyle.base} key = {i}className = 'card'>
-                            <img class="card-img-top" src={require( {image.url} )} alt="Card"></img>
-                        </div>
+                <div className = 'row'>                    
+                    <div className = 'col-12'>
+                        {this.state.char.map((char,i) =>(                    
+                            <Character key = {i} image = {char.url} />                      
                         ))}
                     </div>
                 </div>
