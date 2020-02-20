@@ -14,7 +14,7 @@ const cardStyle = {
         margin: '20px',
         
         ':hover':{
-            transform: 'scale(1.2)'
+            transform: 'scale(1.1)'
         }
     }
 }
@@ -27,11 +27,8 @@ const imgStyle = {
 
 function Character(props) {
   return (
-    <div style = {cardStyle.base} className="card">
-      
-        <img style = {imgStyle} className="card-img-top"key = {props.key} alt = 'something' src={props.image}></img>
-        {/* <span onClick={() => (props.id)} className="remove"></span> */}
-        
+    <div style = {cardStyle.base} onClick={()=>{props.shuffle(); props.clicked(props.id);}}  className="card">
+        <img style = {imgStyle} className="card-img-top"key = {props.key} value = {props.value} alt = 'something' src={props.image}></img>     
     </div>
   );
 }

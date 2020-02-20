@@ -11,6 +11,7 @@ function ScoreKeep(props){
     return(
        <div style = {style} className = "jumbotron jumbotron-fluid"> 
         <h1>Clicky Game v1.0</h1>
+        <h2>{props.message}</h2>
         <h2>Your Score: {props.score} | Highest Record: {props.hiscore}</h2>
        </div>
     )
