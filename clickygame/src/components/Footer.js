@@ -17,7 +17,7 @@ function Footer() {
     return(
         <div style = {footerStyle} className = 'footer'>
             <h1 style = {textStyle} >Current Release : v1.0</h1>
-            <h1 style = {textStyle} ><i class="fab fa-github-square"></i>homemadechowder</h1>
+            <h1 style = {textStyle} ><i className="fab fa-github-square"></i>homemadechowder</h1>
         </div>
     )
 }
