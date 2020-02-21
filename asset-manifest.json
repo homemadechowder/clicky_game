@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/clicky_game/home/static/css/main.d1b05096.chunk.css",
-    "main.js": "/clicky_game/home/static/js/main.d24ce9b2.chunk.js",
-    "main.js.map": "/clicky_game/home/static/js/main.d24ce9b2.chunk.js.map",
-    "runtime-main.js": "/clicky_game/home/static/js/runtime-main.9fd7a620.js",
-    "runtime-main.js.map": "/clicky_game/home/static/js/runtime-main.9fd7a620.js.map",
-    "static/js/2.51fbfe4a.chunk.js": "/clicky_game/home/static/js/2.51fbfe4a.chunk.js",
-    "static/js/2.51fbfe4a.chunk.js.map": "/clicky_game/home/static/js/2.51fbfe4a.chunk.js.map",
-    "index.html": "/clicky_game/home/index.html",
-    "precache-manifest.ddd8eca2df5afe66b9c075d0f14968d4.js": "/clicky_game/home/precache-manifest.ddd8eca2df5afe66b9c075d0f14968d4.js",
-    "service-worker.js": "/clicky_game/home/service-worker.js",
-    "static/css/main.d1b05096.chunk.css.map": "/clicky_game/home/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.51fbfe4a.chunk.js.LICENSE.txt": "/clicky_game/home/static/js/2.51fbfe4a.chunk.js.LICENSE.txt"
+    "main.css": "/clicky_game/static/css/main.d1b05096.chunk.css",
+    "main.js": "/clicky_game/static/js/main.0891dc4f.chunk.js",
+    "main.js.map": "/clicky_game/static/js/main.0891dc4f.chunk.js.map",
+    "runtime-main.js": "/clicky_game/static/js/runtime-main.454c3990.js",
+    "runtime-main.js.map": "/clicky_game/static/js/runtime-main.454c3990.js.map",
+    "static/js/2.51fbfe4a.chunk.js": "/clicky_game/static/js/2.51fbfe4a.chunk.js",
+    "static/js/2.51fbfe4a.chunk.js.map": "/clicky_game/static/js/2.51fbfe4a.chunk.js.map",
+    "index.html": "/clicky_game/index.html",
+    "precache-manifest.059b602a31452194cfb86a0038a74ed4.js": "/clicky_game/precache-manifest.059b602a31452194cfb86a0038a74ed4.js",
+    "service-worker.js": "/clicky_game/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/clicky_game/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.51fbfe4a.chunk.js.LICENSE.txt": "/clicky_game/static/js/2.51fbfe4a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9fd7a620.js",
+    "static/js/runtime-main.454c3990.js",
     "static/js/2.51fbfe4a.chunk.js",
     "static/css/main.d1b05096.chunk.css",
-    "static/js/main.d24ce9b2.chunk.js"
+    "static/js/main.0891dc4f.chunk.js"
   ]
 }
