@@ -11,6 +11,7 @@ function App() {
       
       <Switch>
         <Route exact path = "/" component = {Body}/>
+        <Route exact path = "/clicky_game" component = {Body}/>
       </Switch>
       <Footer />
     </div>
