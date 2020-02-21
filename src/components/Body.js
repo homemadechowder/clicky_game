@@ -68,6 +68,7 @@ class Body extends Component{
         }  
         else {
             this.setState({message: "You guessed incorrectly"})
+            setTimeout(window.location.reload(), 2000)
         }
         
         
